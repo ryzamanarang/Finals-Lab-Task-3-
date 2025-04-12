@@ -1,4 +1,4 @@
-# [Finals Lab Task 3 - Table Manipulation](https://github.com/user-attachments/files/19718240/Finals.Lab.Task.3.-.Ordona.docx)
+# [Finals Lab Task 3 - Table Manipulation](https://github.com/user-attachments/files/19718382/Finals.Lab.Task.3.-.Manarang.docx)
 
 # Step by Step Process:
 1. **Create the Table**  
@@ -28,17 +28,17 @@
 # Screenshots
 ## Query Statements
 ### 1. Task 1
-- ![Image](https://github.com/user-attachments/assets/fb33f43b-e00c-48d0-b030-de90acbfa1ed)
+- ![Image](https://github.com/user-attachments/assets/aa0fc955-7c07-4e36-a331-fea2078c96ea)
 ### 2. Task 2
-- ![Image](https://github.com/user-attachments/assets/2a9c27da-73ca-4aeb-b91e-a3a77ea504e8)
+- ![Image](https://github.com/user-attachments/assets/2f496228-62ea-4489-ae3f-0520c054200e)
 ### 3. Task 3
-- ![Image](https://github.com/user-attachments/assets/36083aeb-f842-4e70-ae1b-89df8564c7b9)
+- ![Image](https://github.com/user-attachments/assets/bcaf5bf7-42f9-4c41-aeb2-00ba5d85955b)
 ### 4. Task 4
-- ![Image](https://github.com/user-attachments/assets/e203c87f-873f-496c-8239-896bfeec1fcb)
+- ![Image](https://github.com/user-attachments/assets/aa19b798-cfda-4c1f-85a3-026ecac0cba1)
 
 # Table Structure
-- ![Image](https://github.com/user-attachments/assets/7b7ab675-46b7-41ab-88ae-08debb828a97)
-- ![Image](https://github.com/user-attachments/assets/650858c0-ddac-4d04-be93-7907c273232f)
+- ![Image](https://github.com/user-attachments/assets/11f3986b-8cc2-43ba-b00c-dc55bab6be43)
+- ![Image](https://github.com/user-attachments/assets/cd6f6b81-242a-4db4-a00c-9dcba889c4bd)
 
 # ER Diagram
-- ![Image](https://github.com/user-attachments/assets/9fda4b44-bd85-4c3a-b1c9-2cfeb7fbfd63)
+- ![Image](https://github.com/user-attachments/assets/220ad0d7-42e8-4fee-96dd-ba0798002266)
