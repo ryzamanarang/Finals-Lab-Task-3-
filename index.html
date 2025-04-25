@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finals Lab Task 3</title>
+    <style>
+        /* Loading Animation */
+        .loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .loader {
+            width: 100px;
+            height: 100px;
+            border: 5px solid #ff69b4;
+            border-radius: 50%;
+            border-top-color: transparent;
+            animation: spin 1s linear infinite;
+        }
+
+        .skull-icon {
+            position: absolute;
+            font-size: 40px;
+            color: #ff69b4;
+            animation: pulse 1s ease-in-out infinite;
+        }
+
+        /* Bat burst animation */
+        .bat-burst {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            background-image: url('https://media.tenor.com/Npixqj3Ek1IAAAAi/sappy-seals.gif');
+            background-size: contain;
+            background-repeat: no-repeat;
+            pointer-events: none;
+            animation: burst 1.5s ease-out forwards;
+            z-index: 9999;
+        }
+
+        @keyframes spin {
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes fadeOut {
+            100% { opacity: 0; visibility: hidden; }
+        }
+
+        @keyframes burst {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+
+        @keyframes backgroundScroll {
+            from { background-position: 0 0; }
+            to { background-position: -100% 0; }
+        }
+
+        body {
+            cursor: url('https://www.cursor.cc/cursor3d/66307.png') 25 25, auto;
+            background-color: #1a1a1a;
+            color: #ff69b4;
+            font-family: 'Gothic', cursive;
+            margin: 0;
+            padding: 20px;
+            background-image: url('https://i.pinimg.com/736x/6e/23/ed/6e23edac1daba77b52caafff61a4c369.jpg');
+            background-repeat: repeat-x;
+            animation: backgroundScroll 20s linear infinite;
+            background-size: contain;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #ff1493;
+            text-shadow: 2px 2px 4px #000;
+            font-family: 'Monster High', fantasy;
+        }
+
+        .content-section {
+            margin: 30px 0;
+            padding: 20px;
+            background-color: rgba(26, 26, 26, 0.8);
+            border-radius: 10px;
+            border: 2px solid #ff69b4;
+            transition: transform 0.3s;
+        }
+
+        .content-section:hover {
+            transform: scale(1.01);
+            box-shadow: 0 0 25px rgba(255, 105, 180, 0.3);
+        }
+
+        .step-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .step-list li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: rgba(255, 105, 180, 0.1);
+            border-radius: 8px;
+            border-left: 4px solid #ff1493;
+            transition: transform 0.3s;
+        }
+
+        .step-list li:hover {
+            transform: translateX(10px);
+            background-color: rgba(255, 105, 180, 0.2);
+        }
+
+        .image-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            border: 3px solid #ff69b4;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 105, 180, 0.5);
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ff1493;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 20px auto;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+        }
+
+        .download-btn:hover {
+            background-color: #ff69b4;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.8);
+        }
+
+        .download-section {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+        <div class="skull-icon">💀</div>
+    </div>
+
+    <div class="container">
+        <h1>Finals Lab Task 3 - Table Manipulation</h1>
+
+        <div class="download-section">
+            <a href="https://github.com/user-attachments/files/19718488/Finals.Lab.Task.3.-.Manarang.docx" class="download-btn">
+                Download Word File
+            </a>
+        </div>
+
+        <div class="content-section">
+            <h2>Step by Step Process</h2>
+            <ul class="step-list">
+                <li><strong>Create the Table</strong>
+                    <ul>
+                        <li>Make a table named 'products'</li>
+                        <li>Add three fields:
+                            <ul>
+                                <li>id (auto-increment and primary key)</li>
+                                <li>product_name (text up to 100 characters, cannot be empty)</li>
+                                <li>price (decimal number)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Add a Rule</strong>
+                    <ul>
+                        <li>Add a CHECK constraint to make sure the price is more than 0</li>
+                    </ul>
+                </li>
+                <li><strong>Insert Valid Products</strong>
+                    <ul>
+                        <li>Only add products with a positive price:
+                            <ul>
+                                <li>Laptop – 999.99</li>
+                                <li>Smartphone – 599.99</li>
+                                <li>Tablet – 299.99</li>
+                                <li>Keyboard – 19.99</li>
+                                <li>Mouse – 14.99</li>
+                                <li>Desk Lamp – 24.99</li>
+                                <li>Speakers – 9.99</li>
+                            </ul>
+                        </li>
+                        <li>Skip items with negative prices</li>
+                    </ul>
+                </li>
+                <li><strong>Update the Table</strong>
+                    <ul>
+                        <li>Change the product_name field to allow up to 120 characters</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Query Statements</h2>
+            
+            <h2>1. Task 1</h2>
+            <div class="image-container">
+                <img src="https://github.com/user-attachments/assets/aa0fc955-7c07-4e36-a331-fea2078c96ea" alt="Task 1">
+            </div>
+
+            <h2>2. Task 2</h2>
+            <div class="image-container">
+                <img src="https://github.com/user-attachments/assets/2f496228-62ea-4489-ae3f-0520c054200e" alt="Task 2">
+            </div>
+
+            <h2>3. Task 3</h2>
+            <div class="image-container">
+                <img src="https://github.com/user-attachments/assets/bcaf5bf7-42f9-4c41-aeb2-00ba5d85955b" alt="Task 3">
+            </div>
+
+            <h2>4. Task 4</h2>
+            <div class="image-container">
+                <img src="https://github.com/user-attachments/assets/aa19b798-cfda-4c1f-85a3-026ecac0cba1" alt="Task 4">
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Table Structure</h2>
+            <div class="image-container">
+                <img src="https://github.com/user-attachments/assets/11f3986b-8cc2-43ba-b00c-dc55bab6be43" alt="Table Structure 1">
+                <img src="https://github.com/user-attachments/assets/cd6f6b81-242a-4db4-a00c-9dcba889c4bd" alt="Table Structure 2">
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>ER Diagram</h2>
+            <div class="image-container">
+                <img src="https://github.com/user-attachments/assets/220ad0d7-42e8-4fee-96dd-ba0798002266" alt="ER Diagram">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.querySelector('.loader-wrapper').style.animation = 'fadeOut 1s ease-out forwards';
+            }, 2000);
+        });
+
+        document.addEventListener('click', (e) => {
+            const burst = document.createElement('div');
+            burst.className = 'bat-burst';
+            burst.style.left = `${e.clientX - 30}px`;
+            burst.style.top = `${e.clientY - 30}px`;
+            document.body.appendChild(burst);
+
+            setTimeout(() => {
+                burst.remove();
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
